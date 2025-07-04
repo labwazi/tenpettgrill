@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tenpett Grill - 8th Mile Triolet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fffdf9;
+      color: #333;
+    }
+
+    header {
+      background: url('banner.jpg') center/cover no-repeat;
+      height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+    }
+
+    .hero-content img.logo {
+      max-height: 100px;
+      margin-bottom: 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+
+    .hero-content a.order-btn {
+      background-color: #25d366;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.1rem;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .hero-content a.order-btn:hover {
+      background-color: #1ebf5d;
+    }
+
+    section.menu {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .menu h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .menu-item {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+      padding: 30px 20px;
+      width: 250px;
+      transition: transform 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .menu-item h3 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #e65100;
+    }
+
+    .menu-item p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    footer {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        height: auto;
+        padding: 60px 20px;
+      }
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+      .menu-items {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header>
+    <div class="hero-content">
+      <img src="yas.jpg" alt="Chicken House Logo" class="logo" />
+      <h1>Welcome to Chicken House</h1>
+      <p>Triolet's Best Chicken Kebab, Wraps, Rounders & More – Fresh & Hot Daily!</p>
+      <a href="https://wa.me/23054984439?text=Hi%2C%20I'm%20interested%20in%20ordering%20some%20chicken%20fast%20food!" target="_blank" class="order-btn">📲 Order Now on WhatsApp</a>
+    </div>
+  </header>
+
+  <!-- Menu Section -->
+  <section class="menu">
+    <h2>Our Chicken Specials</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <h3>Chicken Kebab</h3>
+        <p>Juicy grilled chicken wrapped in warm flatbread with salad & sauce.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Chicken Rounder</h3>
+        <p>Soft bun with crispy chicken fillet, cheese, salad, and creamy sauce.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Chicken Wrap</h3>
+        <p>Succulent spiced chicken rolled in a tortilla with garlic mayo.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Chicken Panini</h3>
+        <p>Grilled panini filled with marinated chicken, cheese, and veggies.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Chips</h3>
+        <p>Freshly fried golden chips – the perfect crunchy side dish.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Chicken House | 8th Mile, Triolet, Mauritius | Built with ❤️
+  </footer>
+
+</body>
+</html>
